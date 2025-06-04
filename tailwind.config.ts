@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,19 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				forest: {
+					dark: '#0a0f0a',
+					midnight: '#1a2f1a',
+					emerald: '#2d5a3d',
+					sage: '#4a7c59',
+					mystical: '#0d2818',
+					glow: '#3fde80',
+					blue: {
+						dark: '#0a1420',
+						midnight: '#1a2f3f',
+						deep: '#2d4a5a'
+					}
 				}
 			},
 			borderRadius: {
@@ -84,11 +98,40 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'mystical-glow': {
+					'0%, 100%': {
+						opacity: '0.5',
+						boxShadow: '0 0 20px rgba(63, 222, 128, 0.3)'
+					},
+					'50%': {
+						opacity: '0.8',
+						boxShadow: '0 0 30px rgba(63, 222, 128, 0.5)'
+					}
+				},
+				'forest-shimmer': {
+					'0%': {
+						backgroundPosition: '-200% 0'
+					},
+					'100%': {
+						backgroundPosition: '200% 0'
+					}
+				},
+				'floating': {
+					'0%, 100%': {
+						transform: 'translateY(0px)'
+					},
+					'50%': {
+						transform: 'translateY(-10px)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'mystical-glow': 'mystical-glow 3s ease-in-out infinite',
+				'forest-shimmer': 'forest-shimmer 3s ease-in-out infinite',
+				'floating': 'floating 6s ease-in-out infinite'
 			}
 		}
 	},
