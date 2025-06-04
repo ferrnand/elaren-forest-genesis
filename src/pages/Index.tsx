@@ -15,11 +15,6 @@ const Index = () => {
     // Aqui você pode adicionar a lógica para abrir o menu
   };
 
-  const handleStoreClick = () => {
-    console.log('Abrir loja');
-    // Aqui você pode adicionar a lógica para abrir a loja
-  };
-
   return (
     <div className="min-h-screen relative overflow-hidden flex items-center justify-center">
       {/* Background */}
@@ -41,12 +36,6 @@ const Index = () => {
           <div className="transform hover:scale-105 transition-transform duration-300">
             <GameButton variant="menu" onClick={handleMenuClick}>
               Menu
-            </GameButton>
-          </div>
-          
-          <div className="transform hover:scale-105 transition-transform duration-300">
-            <GameButton variant="store" onClick={handleStoreClick}>
-              Loja
             </GameButton>
           </div>
         </div>
